@@ -54,7 +54,7 @@ function handleReset() {
   // - switch schoolMode between true and false
 
 function handleSchoolMode(){
-  setSchoolMode(!!schoolMode);
+  setSchoolMode(!schoolMode);
 }
 
   return (
@@ -79,7 +79,7 @@ function handleSchoolMode(){
             </button>
 
             {/* 12. Display mood here using curly brackets */}
-            <p className="output">Mood:{handleHappy} </p>
+            <p className="output">Mood:{mood} </p>
           </div>
 
           <div className="tracker-box">
@@ -95,7 +95,7 @@ function handleSchoolMode(){
             </button>
 
             {/* 14. Display energy here using curly brackets */}
-            <p className="output">Energy:{handleEnergyUp} </p>
+            <p className="output">Energy:{energy} </p>
           </div>
         </div>
 
@@ -116,7 +116,7 @@ function handleSchoolMode(){
         </button>
 
         {/* 17. Add this after the colon: schoolMode ? "School Mode: ON" : "School Mode: OFF" */}
-        <p className="mode">Current Mode: {schoolMode ? School Mode: ON : School Mode: OFF} </p>
+        <p className="mode">Current Mode: {schoolMode ? "School Mode: ON" : "School Mode: OFF"} </p>
 
         {/* 18. Submit! (git add . git commit -m 'done' git push) */}
       </section>
